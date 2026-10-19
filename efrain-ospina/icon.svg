@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1c5833"/>
+  <path d="M113 340c74-8 116 14 143 58 27-44 69-66 143-58-11 75-63 115-143 115S124 415 113 340Z" fill="#b8d7bd"/>
+  <path d="M256 397c-2-78 4-133 34-184" fill="none" stroke="#fff" stroke-width="25" stroke-linecap="round"/>
+  <path d="M294 213c-4-73 36-120 112-133 7 72-31 120-112 133Z" fill="#dcefe0"/>
+  <path d="M283 250c-64 0-106-37-124-107 68-11 117 25 124 107Z" fill="#76af80"/>
+  <circle cx="132" cy="129" r="59" fill="#fff"/>
+  <text x="132" y="149" text-anchor="middle" font-family="Arial,sans-serif" font-size="59" font-weight="800" fill="#1c5833">pH</text>
+</svg>
