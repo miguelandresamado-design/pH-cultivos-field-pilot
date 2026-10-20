@@ -1,50 +1,33 @@
-# pH Cultivos Piloto
+# pH a la vista · versiones de entrenamiento
 
-Prototipo independiente para probar dos formas de trabajo con técnicos de campo, sin modificar `pH-cultivos` ni `pH-cultivos-field`.
+Tres aplicaciones independientes para el entrenamiento de los técnicos de campo. Cada versión abre directamente, sin correo ni contraseña, y contiene únicamente las cinco fincas asignadas al técnico. No utiliza Supabase ni transmite registros a un servidor.
 
-## Módulos
+## Enlaces
 
-### Medición individual
+- Juan Pablo Rojas: `juan-pablo/`
+- Juan Buitrago: `juan-buitrago/`
+- Efraín Ospina: `efrain-ospina/`
 
-Permite conectar el YINMIK YK-S01 o ingresar un valor manual, interpretar el pH de café, agregar ubicación opcional y guardar la medición sin seleccionar finca o lote.
+## Funciones incluidas
 
-### Fincas
+- Medición individual manual o mediante YINMIK YK-S01.
+- Muestreo por finca y lote con jornadas de 10 o 15 puntos.
+- GPS opcional, temperatura, mediana, promedio y desviación estándar.
+- Administración de lotes; la finca y su ubicación permanecen en solo lectura.
+- Historial de campañas por lote.
+- Comparación temporal de hasta tres lotes de la misma finca.
+- Línea y lectura de tendencia para cada lote.
+- Comparación espacial de exactamente dos lotes en una campaña seleccionada.
+- Mapas de calor construidos con los puntos medidos, sin inferir el perímetro del lote.
+- Exportación CSV.
+- Instalación PWA y operación offline después de la primera carga.
 
-Permite seleccionar una finca y uno de sus lotes, registrar 10 puntos para lotes de hasta 2 ha o 15 para lotes mayores y obtener un resultado representativo mediante la mediana. Conserva cada submuestra, GPS, temperatura y datos Bluetooth originales.
+Las cinco fincas de cada técnico incluyen tres lotes de práctica y cuatro campañas históricas de entrenamiento para que las vistas de monitoreo y comparación puedan probarse inmediatamente.
 
-## Funciones de esta etapa
+## Datos y seguridad
 
-- Café como único cultivo.
-- Fincas y lotes ficticios, sin datos personales.
-- Dos historiales separados: mediciones individuales y jornadas por lote.
-- Bluetooth YINMIK YK-S01 mediante el servicio `FF01` y la característica `FF02`.
-- Android mediante Chrome e iPhone mediante Bluefy.
-- Ingreso manual como respaldo.
-- Ubicación opcional por registro.
-- Exportación CSV de jornadas por lote.
-- Guardado local y funcionamiento sin conexión después de la primera carga.
+Los datos permanecen en IndexedDB dentro del navegador. Cada versión utiliza un ámbito de almacenamiento y una caché independientes, evitando cruces entre técnicos cuando se prueban varias aplicaciones en el mismo dispositivo.
 
-## Datos
-
-Esta versión todavía no tiene usuarios ni servidor. Los registros se guardan localmente con estructuras separadas y el campo `recordType`:
-
-- `individual`
-- `submuestra_lote`
-
-Esta separación permitirá sincronizar posteriormente ambos tipos de registro a una misma base de datos sin mezclar las mediciones individuales con las estadísticas de los lotes.
-
-Claves locales:
-
-- `ph-cultivos-field-pilot.individual.v1`
-- `ph-cultivos-field-pilot.journeys.v1`
-- `ph-cultivos-field-pilot.draft.v1`
-
-## Pruebas
-
-```bash
-node tests/logic.test.js
-node tests/pilot-contract.test.js
-node --check app.js
-```
+Estas versiones son para entrenamiento: no tienen autenticación, sincronización ni respaldo remoto. Borrar los datos del sitio o desinstalar la PWA puede eliminar los registros locales.
 
 Los resultados son orientativos. Las decisiones de fertilización o encalado deben confirmarse con análisis de laboratorio y criterio técnico.

@@ -1,0 +1,30 @@
+{
+  "name": "pH a la vista · Juan Pablo Rojas",
+  "short_name": "pH a la vista",
+  "description": "Medición, monitoreo y comparación de lotes · Juan Pablo Rojas",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#edf5ef",
+  "theme_color": "#195f39",
+  "icons": [
+    {
+      "src": "./icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

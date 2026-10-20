@@ -1,0 +1,196 @@
+{
+  "mode": "demo",
+  "country": {
+    "id": "co",
+    "name": "Colombia"
+  },
+  "technicians": [
+    {
+      "id": "tech-co-01",
+      "code": "TEC-002",
+      "name": "Juan Buitrago",
+      "country_id": "co"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "camp-2026-01",
+      "name": "Enero 2026",
+      "date": "2026-01-18"
+    },
+    {
+      "id": "camp-2026-04",
+      "name": "Abril 2026",
+      "date": "2026-04-20"
+    },
+    {
+      "id": "camp-2026-07",
+      "name": "Julio 2026",
+      "date": "2026-07-16"
+    },
+    {
+      "id": "camp-2026-10",
+      "name": "Octubre 2026",
+      "date": "2026-10-01"
+    }
+  ],
+  "farms": [
+    {
+      "id": "farm-01",
+      "code": "FIN-001",
+      "name": "La Italia",
+      "technician_id": "tech-co-01",
+      "region": "Antioquia · Andes · Taparto"
+    },
+    {
+      "id": "farm-02",
+      "code": "FIN-002",
+      "name": "Rigoberto Franco",
+      "technician_id": "tech-co-01",
+      "region": "Antioquia · Andes · Taparto"
+    },
+    {
+      "id": "farm-03",
+      "code": "FIN-003",
+      "name": "La Costa",
+      "technician_id": "tech-co-01",
+      "region": "Antioquia · Concordia · La Costa"
+    },
+    {
+      "id": "farm-04",
+      "code": "FIN-004",
+      "name": "La Primavera",
+      "technician_id": "tech-co-01",
+      "region": "Antioquia · Concordia · Pueblo Rico"
+    },
+    {
+      "id": "farm-05",
+      "code": "FIN-005",
+      "name": "La Cascada",
+      "technician_id": "tech-co-01",
+      "region": "Antioquia · Ciudad Bolívar · Farallón"
+    }
+  ],
+  "lots": [
+    {
+      "id": "lot-01-a",
+      "farm_id": "farm-01",
+      "name": "Lote de práctica 1",
+      "area_ha": 1.8,
+      "planting_year": 2021,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-01-b",
+      "farm_id": "farm-01",
+      "name": "Lote de práctica 2",
+      "area_ha": 2.7,
+      "planting_year": 2018,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-01-c",
+      "farm_id": "farm-01",
+      "name": "Lote de práctica 3",
+      "area_ha": 1.4,
+      "planting_year": 2023,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-02-a",
+      "farm_id": "farm-02",
+      "name": "Lote de práctica 1",
+      "area_ha": 1.8,
+      "planting_year": 2021,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-02-b",
+      "farm_id": "farm-02",
+      "name": "Lote de práctica 2",
+      "area_ha": 2.7,
+      "planting_year": 2018,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-02-c",
+      "farm_id": "farm-02",
+      "name": "Lote de práctica 3",
+      "area_ha": 1.4,
+      "planting_year": 2023,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-03-a",
+      "farm_id": "farm-03",
+      "name": "Lote de práctica 1",
+      "area_ha": 1.8,
+      "planting_year": 2021,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-03-b",
+      "farm_id": "farm-03",
+      "name": "Lote de práctica 2",
+      "area_ha": 2.7,
+      "planting_year": 2018,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-03-c",
+      "farm_id": "farm-03",
+      "name": "Lote de práctica 3",
+      "area_ha": 1.4,
+      "planting_year": 2023,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-04-a",
+      "farm_id": "farm-04",
+      "name": "Lote de práctica 1",
+      "area_ha": 1.8,
+      "planting_year": 2021,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-04-b",
+      "farm_id": "farm-04",
+      "name": "Lote de práctica 2",
+      "area_ha": 2.7,
+      "planting_year": 2018,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-04-c",
+      "farm_id": "farm-04",
+      "name": "Lote de práctica 3",
+      "area_ha": 1.4,
+      "planting_year": 2023,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-05-a",
+      "farm_id": "farm-05",
+      "name": "Lote de práctica 1",
+      "area_ha": 1.8,
+      "planting_year": 2021,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-05-b",
+      "farm_id": "farm-05",
+      "name": "Lote de práctica 2",
+      "area_ha": 2.7,
+      "planting_year": 2018,
+      "crop": "coffee"
+    },
+    {
+      "id": "lot-05-c",
+      "farm_id": "farm-05",
+      "name": "Lote de práctica 3",
+      "area_ha": 1.4,
+      "planting_year": 2023,
+      "crop": "coffee"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "demo-2026-10",
+  "notice": "Rangos provisionales para demostración. Requieren aprobación agronómica antes del piloto.",
+  "crops": {
+    "coffee": {
+      "name": "Café",
+      "provisional": true,
+      "levels": [
+        {"max": 4.5, "label": "Muy bajo", "tone": "very-low"},
+        {"max": 5.0, "label": "Bajo", "tone": "low"},
+        {"max": 5.5, "label": "Moderadamente ácido", "tone": "medium"},
+        {"max": 6.5, "label": "Adecuado", "tone": "adequate"},
+        {"max": 14.0, "label": "Alto", "tone": "high"}
+      ]
+    }
+  }
+}
