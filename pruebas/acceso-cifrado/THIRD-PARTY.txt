@@ -1,0 +1,2 @@
+StatiCrypt 3.5.4 · MIT · https://github.com/robinmoisson/staticrypt
+Cifrado y descifrado originales de StatiCrypt. La interfaz y el empaquetado pertenecen a pH a la vista.
